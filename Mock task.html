@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cntmain{
+            margin: 100px;
+            height: 100px;
+            width: 50%;
+            display: flex;
+        }
+        h1{
+            color: red;
+            margin-left: 20px;
+        }
+        .box1,.box2{
+            height: 50px;
+            width: 200px;
+        }
+        .box1{
+            transform: rotate(-45deg);
+            border: 1px solid blue;
+        }
+        .box2{
+            transform: rotate(45deg);
+            border: 1px solid red;
+        }
+        .main2cnt{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .outercrcl{
+            height: 90px;
+            width: 90px;
+            /* border: 1px solid; */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: conic-gradient(white 0deg,  blue 270deg, blue 360deg );
+            animation: circle 1s linear infinite;
+        }
+        .innercrcl{
+             height: 70px;
+             width: 70px;
+             /* border: 1px solid blue; */
+             border-radius: 50%;
+             background-color: #fff;
+        }
+        @keyframes circle {
+            to{
+                transform: rotate(360deg);
+            }
+            from{
+                  transform: rotate(0deg);
+            }
+            
+        }
+        .fade{
+            height: 400px;
+            width: 400px;
+
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           border: 1px solid;
+        }
+        .fade div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-image: conic-gradient(white 0deg, white 90deg, red 90deg, red 180deg, red 180deg, red 270deg, white 270deg, white 360deg);
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="cntmain">
+         <div class="box1"><h1>I LOVE</h1></div>
+         <div class="box2"><h1>SOMEONE</h1></div>
+    </div>
+    <div class="main2cnt">
+        <div class="outercrcl">
+            <div class="innercrcl"></div>
+        </div>
+    </div>
+    <div class="fade">
+        <div></div>
+    </div>
+    
+</body>
+</html>
